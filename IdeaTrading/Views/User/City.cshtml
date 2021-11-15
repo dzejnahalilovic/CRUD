@@ -1,0 +1,21 @@
+﻿
+@{
+
+}
+
+<button onclick="Cities()" class="btn btn-dark" style="margin:30px 0px 30px 0px;">City</button>
+
+<div id="citiesTemp">
+</div>
+
+<script>
+    function Cities() {
+        var url = "/User/CityTemp";
+
+        $.get(url, function (d) {
+            $("#citiesTemp").html(d);
+        });
+    }
+</script>
+
+

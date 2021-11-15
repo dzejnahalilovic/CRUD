@@ -1,0 +1,21 @@
+﻿@using IdeaTrading.ViewModels
+@{
+    Layout = null;
+}
+
+@model List<CityViewModel>
+
+
+
+
+@foreach (CityViewModel m in Model)
+{
+
+    if (@m.City != null)
+    {
+        <span> @m.City, @m.Number </span>
+    }
+    
+    <br />
+}
+
